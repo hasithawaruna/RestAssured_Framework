@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://petstore.swagger.io/v2/pet/findByStatus",
+  "title": "Root Schema",
+  "type": "array",
+  "default": [],
+  "items": {
+    "title": "A Schema",
+    "type": "object",
+    "default": {},
+    "required": [
+      "id",
+      "name",
+      "photoUrls",
+      "tags",
+      "status"
+    ],
+    "properties": {
+      "id": {
+        "title": "The id Schema",
+        "type": "integer",
+        "default": 0,
+        "examples": [
+          0
+        ]
+      },
+      "category": {
+        "title": "The category Schema",
+        "type": "object",
+        "default": {},
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "title": "The id Schema",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "name": {
+            "title": "The name Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "string"
+            ]
+          }
+        },
+        "examples": [{
+          "id": 0,
+          "name": "string"
+        }]
+      },
+      "name": {
+        "title": "The name Schema",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "doggie"
+        ]
+      },
+      "photoUrls": {
+        "title": "The photoUrls Schema",
+        "type": "array",
+        "default": [],
+        "items": {
+          "title": "A Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "string"
+          ]
+        },
+        "examples": [
+          [
+            "string"]
+        ]
+      },
+      "tags": {
+        "title": "The tags Schema",
+        "type": "array",
+        "default": [],
+        "items": {
+          "title": "A Schema",
+          "type": "object",
+          "default": {},
+          "required": [
+            "id",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "title": "The id Schema",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "name": {
+              "title": "The name Schema",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "string"
+              ]
+            }
+          },
+          "examples": [{
+            "id": 0,
+            "name": "string"
+          }]
+        },
+        "examples": [
+          [{
+            "id": 0,
+            "name": "string"
+          }]
+        ]
+      },
+      "status": {
+        "title": "The status Schema",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "available"
+        ]
+      }
+    },
+    "examples": [{
+      "id": 0,
+      "category": {
+        "id": 0,
+        "name": "string"
+      },
+      "name": "doggie",
+      "photoUrls": [
+        "string"
+      ],
+      "tags": [{
+        "id": 0,
+        "name": "string"
+      }],
+      "status": "available"
+    }]
+  },
+  "examples": [
+    [{
+      "id": 0,
+      "category": {
+        "id": 0,
+        "name": "string"
+      },
+      "name": "doggie",
+      "photoUrls": [
+        "stringa"
+      ],
+      "tags": [{
+        "id": 0,
+        "name": "string"
+      }],
+      "status": "available"
+    }]
+  ]
+}
